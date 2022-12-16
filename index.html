@@ -9,18 +9,29 @@
     <title>Joshua Toback Portfolio</title>
 </head>
 <body>
+      <!-- Header -->
+      <div class="header">
+        <h1>Joshua Toback</h1>
+        <p>Designing the <b>future.</b></p>
+      </div>
+      
+      <!-- Navigation Bar -->
+      <div class="navbar">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+      </div>
 
     <aside class ="about">
         <div id="title">
-        <h1>Joshua Toback</h1>
-        <h2>Full Stack Web Developer</h2>
-        <img id="headshot" src="./assets/images/Profile.jpg">
+        <h1>Full Stack Web Developer</h1>
+        <!-- <img id="headshot" src="./assets/images/Profile.jpg"> -->
         </div>
-        <div id="Logos">
+        <div id="Logo">
             <a href="https://github.com/JoshuaToback"><img src="./assets/images/GitHubLogo.png" class="grayscale"></a>
-        </div>
-        <div id="Logos">
             <a href="https://www.linkedin.com/in/joshua-toback/"><img src="./assets/images/LinkedInLogo.png" class="grayscale"></a>
+            <a href="mailto:joshuatobackdev@gmail.com"><img src="./assets/images/eMail.png"></a>
         </div>
         <div id="Resume">
             <form method="get" action="./assets/files/JoshuaToback_Resume.pdf" id="Resume">
@@ -29,28 +40,27 @@
         </div>
     </aside>
 
-    <section id="intro">
+    <section class="row IntroContainer">
         <h1>Welcome to My Portfolio!</h1>
 
-        <p>Hello! My name is <b><i>Joshua Toback</i></b>. I am a FullStack Web Developer who loves understanding what makes your site work, or what makes your site NOT work! Ever since I played my first Flash game in 2007, I've wanted to be a part of my own website. Combining my love for web design, video games, and screenwriting, I hope to provide a creative kick to your site! </p>
+        <p>Hello! My name is <b><i>Joshua Toback</i></b>. I am a FullStack Web Developer who loves understanding what makes your site work, or what makes your site NOT work! Ever since I played my first Flash game in 2007, I've wanted to be a part of my own website. Combining my love for web design, video games, and screenwriting, I hope to provide a creative kick to your site! </p>   
     </section>
 
-    <section class="projects">
-        <h2>Projects</h2>
-        <div>
-            <div class="program-container">
-                <figure class="program" id="driveDestination">
-                    <a href="https://github.com/JoshuaToback/Drive-Destination/">
-                    <img src="./assets/images/DriveDestination.png" alt="Map">
-                    <div class="program-summary">
-                        <h2 id="program-header"><span>Destination Tracker</span></h2>
-                        <h3>HTML, CSS, and Javascript</h3>
-                        <p>Developed using the Distance Matrix API and Google Places API, this app allows users to see how far one place is from another, and get directions as well!</p>
-                    </a>
-                    </div>
-                </figure>
+    <section class="row projects">
+        <h1 id="projH">Projects</h1>
+        <div class="DriveDestination">
+            <a href='https://github.com/JoshuaToback/Drive-Destination'><img class="project" src="./assets/images/DriveDestination.png">
+            <div id="ddText">
+                <h1>Drive Destination</h1>
+                <p>HTML, CSS, JavaScript</p>
             </div>
+            </a>
         </div>
     </section>
+
+    <div class="footer">
+        <h2>Developed by Joshua Toback</h2>
+      </div>
+<script src="./assets/index.js"></script>
 </body>
 </html>
