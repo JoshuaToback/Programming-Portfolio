@@ -176,16 +176,35 @@ a {
     text-align: center;
 }
 
+/* FullStacks Cafe */
+
+.FullStacksCafe {
+    text-align: center;
+    color: white;
+}
+
+.FullStacksCafe img {
+    width: 500px;
+    padding: 20px;
+}
+
+#FSText {
+    color: white;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    letter-spacing:.1cm
+}
+
 /* Drive Destination  */
 
 .DriveDestination {
-    position: relative;
     text-align: center;
     color: white;
 }
 
 .DriveDestination img {
-    width: 100%;
+    width: 500px;
     padding: 20px;
 }
 
@@ -194,12 +213,14 @@ a {
 }
 
 #ddText {
-    position: absolute;
     top: 20px;
     left: 20px;
     background-color: rgba(0, 0, 0, 0.4);
-    letter-spacing:.1cm
+    letter-spacing:.1cm;
+    color: white;
 }
+
+
 /* Footer */
 .footer {
     padding: 20px;
