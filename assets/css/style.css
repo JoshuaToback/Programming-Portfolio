@@ -170,6 +170,14 @@ a {
     margin-bottom: 20px;
 }
 
+.projects h2 {
+    letter-spacing:.1cm
+}
+
+.projects h3 {
+    letter-spacing:.1cm
+}
+
 #projH  {
     color:goldenrod;
     flex-direction: row;
@@ -192,8 +200,7 @@ a {
     color: white;
     top: 20px;
     left: 20px;
-    background-color: rgba(0, 0, 0, 0.4);
-    letter-spacing:.1cm
+    background-color: rgba(0, 0, 0, 0.4)
 }
 
 /* Drive Destination  */
@@ -204,7 +211,8 @@ a {
 }
 
 .DriveDestination img {
-    width: 500px;
+    height: auto;
+    width: 400px;
     padding: 20px;
 }
 
@@ -216,7 +224,6 @@ a {
     top: 20px;
     left: 20px;
     background-color: rgba(0, 0, 0, 0.4);
-    letter-spacing:.1cm;
     color: white;
 }
 
