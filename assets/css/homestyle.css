@@ -1,0 +1,31 @@
+#hero {
+        height: 800px;
+        width: 100%;    
+        background-image: url("../images/Downtown_LA.jpg");
+        background-size: cover;
+        filter: blur(4px);
+}
+
+.info-container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.intro {
+    background-color: rgba(0,0,0,0.5);
+    padding:20px;
+    border-radius: 20px;
+}
+
+.intro p {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
