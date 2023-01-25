@@ -17,7 +17,13 @@
                 <h1>Joshua Toback</h1>
                 <p>Designing the <b>future.</b></p>
             </div>
-            <div class="col align-items-start text-right navbar">
+
+            <div class="row align-items-start navbar" id="Logo">
+                <a href="https://github.com/JoshuaToback"><img src="./assets/images/GitHubLogo.png" class="grayscale"></a>
+                <a href="https://www.linkedin.com/in/joshua-toback/"><img src="./assets/images/LinkedInLogo.png" class="grayscale"></a>
+                <a href="mailto:joshuatobackdev@gmail.com"><img src="./assets/images/eMail.png"></a>
+            </div>
+            <div class="col row align-items-start text-right navbar">
                 <a href="#">About Me</a>
                 <a href="#">Full Stack</a>
                 <a href="#">Front End</a>
@@ -27,39 +33,58 @@
     </header>
 
 
-    <aside class ="about">
+    <!-- <aside class="container-fluid about">
         <div id="title">
         <h1>Contact Info</h1>
-        <!-- <img id="headshot" src="./assets/images/Profile.jpg"> -->
         </div>
-        <div id="Logo">
-            <a href="https://github.com/JoshuaToback"><img src="./assets/images/GitHubLogo.png" class="grayscale"></a>
-            <a href="https://www.linkedin.com/in/joshua-toback/"><img src="./assets/images/LinkedInLogo.png" class="grayscale"></a>
-            <a href="mailto:joshuatobackdev@gmail.com"><img src="./assets/images/eMail.png"></a>
-        </div>
+
         <div id="Resume">
             <form method="get" action="./assets/files/JoshuaToback_Resume.pdf" id="Resume">
                 <button type="submit">Download Resume</button>
             </form>
         </div>
-    </aside>
+    </aside> -->
 
-    <div class="introTitle">
-        <h1 class="text-center">About Me</h1>
-        
-    </div>
-    <hr>
 
-    <section class="row IntroContainer">
-        <h1>Welcome to My Portfolio!</h1>
+    <section class="IntroContainer">
+        <div>
+            <h1>About Me</h1>
+        </div>
         <div class="profile-img">
             <img src="./assets/images/Profile.jpg" alt="Joshua Toback">
         </div>
-        
-
-        <div class="introInfo">
+        <div class="introInfo text-center container-fluid">
             <p>Hello! My name is <b><i>Joshua Toback</i></b>. I am a UI / UX Web Developer who loves understanding what makes your site work, or what makes your site NOT work! Ever since I played my first Flash game in 2007, I've wanted to be a part of my own website. Combining my love for web design, video games, and screenwriting, I hope to provide a creative kick to your site! </p>  
+            <p>Outside of programming, I enjoy voice acting, streaming video games, and listening to/playing music!</p>
         </div>
+    </section>
+
+    <hr>
+
+
+    <section class="IntroContainer skills">
+        <div class="col">
+            <h1 class="container text-center">Skills</h1>
+        </div>
+
+        <div class="row" id="appImage">
+            <div class="col align-self-end">
+                <h3 class="text-center">Front-End</h3>
+                <div class="row justify-content-center">
+                      <img src="./assets/images/HTML5.png">
+                      <img src="./assets/images/css3.png">
+                      <img src="./assets/images/javascript.png">
+                      <!-- <img src="./assets/images/bootstrap-4-logo.png"> -->
+                </div>
+            </div>
+            <div class="col align-self-end">
+                <h3 class="text-center">Back-End</h3>
+                <div class="row justify-content-center">
+                    <img src="./assets/images/nodejs.png">
+                    <img src="./assets/images/mysql.png">
+                    <img src="./assets/images/npm-logo.png">
+                </div>
+            </div>
     </section>
 
 </body>
