@@ -108,7 +108,6 @@ a {
 
 /* Logos */
 #Logo {
-  background-color: rgb(255, 255, 255, 0.4);
   margin-bottom: 20px;
   margin-right: 20px;
   padding: 10px;
@@ -117,10 +116,10 @@ a {
 
 #Logo img {
   max-width: 50px;
-  margin-right:auto;
+  margin-right:20px;
 }
 
-#Logo a:hover {
+#Logo img:hover {
   box-shadow: inset 0px 0px 8px goldenrod, 0 0 20px goldenrod;
 }
 

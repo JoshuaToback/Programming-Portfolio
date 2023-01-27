@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+  }
+
+  .dr {
+    padding: 20px;
+  }
+
+  .dr img {
+    width: auto;
+    height: 300px;
+  }
+
+  .techInfo {
+    margin-top: 20px;
+  }
+  
+  #grid {
+    height: 100vh;
+    transition: 500ms;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3px;
+    background: white;
+  }
+  
+  :where(.left, .center, .right) {
+    background: goldenrod;
+    transition: 300ms;
+  }
+  
+  :where(.left, .center, .right):hover {
+    background: maroon;
+    color:white;
+  }
+
+  :where(.left, .center, .right):hover h2{
+    font-size: 50px;
+  }
+
+  :where(.left, .center, .right):hover img{
+    height: 500px;
+  }
+
+  :where(.left, .center, .right):hover h3{
+    font-size: 60px;
+  }
+  
+  #grid:has(.left:hover) {
+    grid-template-columns: 2fr 0.5fr 0.5fr;
+  }
+  
+  #grid:has(.center:hover) {
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+  }
+  #grid:has(.right:hover) {
+    grid-template-columns: 0.5fr 0.5fr 2fr;
+  }
