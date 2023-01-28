@@ -14,6 +14,50 @@ body {
   .techInfo {
     margin-top: 20px;
   }
+
+  .hide {
+    display: none;
+  }
+
+  .techInfo:hover + .hide {
+    display: block;
+  }
+
+.siteButtons button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    background-color: goldenrod;
+    color: white;
+    font-size: 40px;
+    border-radius: 20px;
+    padding: 7px 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.siteButtons button:hover {
+    background-color: white;
+    color: goldenrod;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+}
+
+  .siteButtons a{
+    color: inherit;
+    text-decoration: none;
+  } 
+
+  .siteButtons:hover a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .appImage img {
+    width: 100px;
+    height:auto;
+    margin-right: 10px;
+
+}
+
   
   #grid {
     height: 100vh;
@@ -43,8 +87,14 @@ body {
   }
 
   :where(.left, .center, .right):hover h3{
-    font-size: 60px;
+    font-size: 40px;
   }
+
+  :where(.left, .center, .right):hover p{
+    font-size: 30px;
+  }
+
+  
   
   #grid:has(.left:hover) {
     grid-template-columns: 2fr 0.5fr 0.5fr;
