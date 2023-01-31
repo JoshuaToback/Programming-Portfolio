@@ -126,7 +126,15 @@ a {
 .grayscale { filter: grayscale(100%); }
 
 
+.name a {
+  color: white;
+  text-decoration: none;
+}
 
+.name a:hover {
+  color: rgb(75, 156, 211);
+  text-decoration: none;
+}
 
 /* Footer */
 .footer {
