@@ -1,5 +1,11 @@
 body {
     margin: 0;
+    background-color: maroon;
+  }
+
+  #feHead {
+    background-color: maroon;
+    color: goldenrod;
   }
 
   .dr {
@@ -11,8 +17,23 @@ body {
     height: 300px;
   }
 
+  .pg {
+    padding: 20px;
+  }
+
+  .pg img {
+    width: auto;
+    height: 300px;
+  }
+
+
   .techInfo {
     margin-top: 20px;
+  }
+
+  .techInfo img {
+    width: auto;
+    height: 300px;
   }
 
   .hide {
@@ -21,6 +42,11 @@ body {
 
   .techInfo:hover + .hide {
     display: block;
+  }
+
+  .techInfo:hover img {
+    width: auto;
+    height: 500px;
   }
 
 .siteButtons button{
@@ -60,7 +86,7 @@ body {
 
   
   #grid {
-    height: 100vh;
+    height: auto;
     transition: 500ms;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -70,7 +96,7 @@ body {
   
   :where(.left, .center, .right) {
     background: goldenrod;
-    transition: 300ms;
+    transition: 500ms;
   }
   
   :where(.left, .center, .right):hover {
@@ -83,8 +109,10 @@ body {
   }
 
   :where(.left, .center, .right):hover img{
-    height: 500px;
+    height: 200px;
+    width: auto;
   }
+  
 
   :where(.left, .center, .right):hover h3{
     font-size: 40px;
