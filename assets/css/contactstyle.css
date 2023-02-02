@@ -1,3 +1,33 @@
-.container {
-    height: 100vh;
+.container-fluid {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
+
+#contactInfo {
+    font-size: 25px;
+}
+
+#Resume {
+    justify-content: center;
+}
+
+.footer {
+    width: 100%;
+}
+
+#email {
+    margin-left: 20px;
+}
+
+#logos {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+#logos:hover {
+    box-shadow: inset 0px 0px 8px goldenrod, 0 0 20px goldenrod;
+  }

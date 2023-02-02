@@ -1,84 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/reset.css">
-    <link rel="stylesheet" href="../assets/css/fullstyle.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/fullstyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <title>Joshua Toback | Full Stack</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <header class="header container-fluid bg-dark text-light">
-        <div class="row">
-            <div class="col align-self-start name">
-                <a href="../index.html"><h1>Joshua Toback</h1></a>
-                <p>Designing the <b>future.</b></p>
-            </div>
-            <nav class="col row align-items-start text-right navbar">
-                <a href="../public/about.html">About Me</a>
-                <a href="../public/fullstack.html">Full Stack</a>
-                <a href="../public/frontend.html">Front End</a>
-                <a href="../public/contact.html">Contact</a>
-            </nav>
+      <div class="row">
+        <div class="col align-self-start name">
+          <a href="../index.html"><h1>Joshua Toback</h1></a>
+          <p>Designing the <b>future.</b></p>
         </div>
+        <nav class="col row align-items-start text-right navbar">
+          <a href="../public/about.html">About Me</a>
+          <a href="../public/fullstack.html">Full Stack</a>
+          <a href="../public/frontend.html">Front End</a>
+          <a href="../public/contact.html">Contact</a>
+        </nav>
+      </div>
     </header>
 
     <div>
-        <h1 class="title text-center">Full Stack</h1>
+      <h1 class="title text-center">Full Stack</h1>
     </div>
 
-    <hr>
+    <hr />
 
     <div class="container-fluid">
-        <div class="row">
-            <div id="projectsContainer" class="col">
-                <img src="../assets/images/FullStacks.png">
+      <div class="row">
+        <!-- Slider main container -->
+        <div class="col swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <img src="../assets/images/FullStacks.png" alt="FullStacksHome">
+                <p>The Homepage of Fullstacks Cafe. Includes a slideshow of menu items
+                    and a button that starts the order taking process.</p>
             </div>
-
-            <div class="col projectInfo">
-                <h2 class="text-center">Fullstacks Cafe</h2>
-
-                <p class="text-center">A full stack, MVC dual application that allows potential customers of a
-                    restaraunt to select items from a menu, review and place orders that are stored locally.
-                    It also allows employees to access a password-locked CLI that can adjust prices, menu options,
-                    and review orders.
+            <div class="swiper-slide">
+                <img src="../assets/images/FullstackMenu.png" alt="FullStacksMenu">
+                <p>An interactive menu that stores selections in localStorage and creates an
+                    interactive cart for customers to adjust as they see fit.
                 </p>
-
-                <hr class="border">
-
-                <div class="justify-content-center">
-                    <h3 class="text-center">Technologies</h3>
-                    <ul class="row justify-content-center" id="appImage">
-                        <li><img src="../assets/images/HTML5.png" alt="html5"></li>
-                        <li><img src="../assets/images/css3.png" alt="css3"></li>
-                        <li><img src="../assets/images/javascript.png" alt="JavaScript"></li>
-                        <li><img src="../assets/images/mysql.png" alt="MySql"></li>
-                        <li><img src="../assets/images/bootstrap-4-logo.png" alt="Bootstrap"></li>
-                        <li><img src="../assets/images/nodejs.png" alt="node"></li>
-                        <li><img src="../assets/images/nosql.png" alt="noSQL"></li>
-                    </ul>
-                    <div class="siteButtons d-flex justify-content-center">
-                        <a id="github" href="https://github.com/JoshuaToback/FullStacks-Cafe">Github</a>
-                        <a id="deploy" href="https://fullstackscafe.herokuapp.com/home.html">Live</a>
-                    </div>
-                </div>
             </div>
+            <div class="swiper-slide">
+                <img src="../assets/images/FullStacksCheckout.png" alt="FullStacksCheckout">
+                <p>A checkout page that can submit your order and store it in the local database.</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="../assets/images/OrderTable.png">
+                <p>Once an order is placed, it's stored in DBeaver and can be accessed through the CLI.</p>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
         </div>
+
+        <div class="col projectInfo">
+          <h2 class="text-center">Fullstacks Cafe</h2>
+
+          <p class="text-center">
+            A full stack, MVC dual application that allows potential customers
+            of a restaraunt to select items from a menu, review and place orders
+            that are stored locally. It also allows employees to access a
+            password-locked CLI that can adjust prices, menu options, and review
+            orders.
+          </p>
+
+          <hr class="border" />
+
+          <div class="justify-content-center">
+            <h3 class="text-center">Technologies</h3>
+            <ul class="row justify-content-center" id="appImage">
+              <li><img src="../assets/images/HTML5.png" alt="html5" /></li>
+              <li><img src="../assets/images/css3.png" alt="css3" /></li>
+              <li>
+                <img src="../assets/images/javascript.png" alt="JavaScript" />
+              </li>
+              <li><img src="../assets/images/mysql.png" alt="MySql" /></li>
+              <li>
+                <img
+                  src="../assets/images/bootstrap-4-logo.png"
+                  alt="Bootstrap"
+                />
+              </li>
+              <li><img src="../assets/images/nodejs.png" alt="node" /></li>
+              <li><img src="../assets/images/nosql.png" alt="noSQL" /></li>
+            </ul>
+            <div class="siteButtons d-flex justify-content-center">
+              <a
+                id="github"
+                href="https://github.com/JoshuaToback/FullStacks-Cafe"
+                >Github</a
+              >
+              <a
+                id="deploy"
+                href="https://fullstackscafe.herokuapp.com/home.html"
+                >Live</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <hr>
+    <hr />
 
-<footer class="container-fluid footer">
-    <h2 class="text-center align-items-end">Developed by Joshua Toback</h2>
-    <div class="row align-items-start" id="Logo">
-        <a href="https://github.com/JoshuaToback"><img src="../assets/images/GitHubLogo.png" class="grayscale"></a>
-        <a href="https://www.linkedin.com/in/joshua-toback/"><img src="../assets/images/LinkedInLogo.png" class="grayscale"></a>
-        <a href="mailto:joshuatobackdev@gmail.com"><img src="../assets/images/eMail.png"></a>
-    </div>
-</footer>
-    <script src="../assets/js/fullstack.js"></script>
-</body>
+    <footer class="container-fluid footer">
+      <h2 class="text-center align-items-end">Developed by Joshua Toback</h2>
+      <div class="row align-items-start" id="Logo">
+        <a href="https://github.com/JoshuaToback"
+          ><img src="../assets/images/GitHubLogo.png" class="grayscale"
+        /></a>
+        <a href="https://www.linkedin.com/in/joshua-toback/"
+          ><img src="../assets/images/LinkedInLogo.png" class="grayscale"
+        /></a>
+        <a href="mailto:joshuatobackdev@gmail.com"
+          ><img src="../assets/images/eMail.png"
+        /></a>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
+  </body>
 </html>
