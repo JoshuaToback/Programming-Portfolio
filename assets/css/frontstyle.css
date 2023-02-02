@@ -6,6 +6,7 @@ body {
   #feHead {
     background-color: maroon;
     color: goldenrod;
+    margin-bottom: 0;
   }
 
   .dr {
