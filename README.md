@@ -17,7 +17,7 @@ N/A
 
 ## Usage
 
-## Check out the deployed site [here]
+## Check out the deployed site [here](https://joshuatoback.github.io/Programming-Portfolio/)!
 
 #
 
@@ -26,4 +26,6 @@ N/A
 <ul>
     <li>HTML</li>
     <li>CSS</li>
+    <li>JavaScript</li>
+    <li>Swiper.js</li>
 </ul>
